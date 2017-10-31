@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+  <!-- the Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Adina Matei</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Algorithms</a></li>
+              <li><a href="#">OOP</a></li>
+              <li><a href="#">JS Validator</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">GitHub</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Page content -->
+  <div class="container">
+    <div class="row">
+      <h1 id="fontWeight">Algorithmic challenges</h1>
+    </div> <!-- /.row -->
+
+    <div class="emptyDiv"></div>
+
+
+      <!-- Challenge Container -->
+      <div class="panel-group challengeContainer" id="accordion" role="tablist" aria-multiselectable="true">
+
+          <!-- 1. Multiples of 3 and 5 -->
+          <div class="panel panel-default algorithm-card">
+              <div class="panel-heading" role="tab" id="headingOne">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Multiples of 3 and 5
+                      </a>
+                  </h1>
+              </div>
+              <!-- hidden panel -->
+              <div id="collapseOne" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                      <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
+                  </div>
+                  <button class="btn btn-success" type="button" id="myButton" data-toggle="collapse" data-target=".sum" aria-expanded="false">
+                      Answer
+                  </button>
+                  <div class="sum"></div>
+              </div>
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+          <!-- 2. Even Number Checker -->
+          <div class="panel panel-default algorithm-card">
+              <div class="panel-heading" role="tab" id="heading2">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                          Even Number Checker
+                      </a>
+                  </h1>
+              </div>
+              <!-- hidden panel -->
+              <div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">
+                  <div class="panel-body">
+                      <input id="arrinput" placeholder=" Please type some numbers ">
+                  </div>
+                  <button class="btn btn-success" type="button" id="check-even" data-toggle="collapse" data-target=".even-answer" aria-expanded="false">
+                      Answer
+                  </button>
+                  <div class="even-answer"></div>
+              </div>
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+
+
+          <!-- 3. Reverse a string -->
+          <div class="panel panel-default algorithm-card">
+
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading3">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                          Reverse a string
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse3" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading3">
+
+                  <div class="panel-body">
+                      <input id="stringinput" placeholder=" Type a string ">
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="reverse-string" data-toggle="collapse" data-target=".reverse" aria-expanded="false">Reverse</button>
+
+                      <!-- Small modal -->
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">Example</button>
+
+                      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                          <div class="modal-dialog modal-sm" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">x</span>
+                                      </button>
+                                      <h4 class="modal-title">String Example</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <p>hello</p>
+                                      <p>htraE morf sgniteerG</p>
+                                      <p>Howdy</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- The answer -->
+                  <div class="reverse"></div>
+
+              </div>
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+
+          <!--4. Check for palindromes-->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading4">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                          Check for Palindromes
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse4" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading4">
+
+                  <div class="panel-body">
+                      <input id="palin-input" placeholder=" Enter the text you'd like to check ">
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="check-palindrome" data-toggle="collapse" data-target=".isPalindrome" aria-expanded="false">Check</button>
+
+                      <!-- Small modal -->
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs-example-modal-sm">Example</button>
+
+                      <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                          <div class="modal-dialog modal-sm" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">x</span>
+                                      </button>
+                                      <h4 class="modal-title">Palindrome Examples</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      <p>A man, a plan, a canal. Panama</p>
+                                      <p>never odd or even</p>
+                                      <p>My age is 0, 0 si ega ym</p>
+                                      <p>0_0 (: /-\ :) 0-0</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- The answer -->
+                  <div class="isPalindrome"></div>
+              </div>
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+      </div> <!-- /.panel-group .challengeContainer  -->
+  </div> <!-- /.container  -->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/Challenges.js"></script>
+</body>
+</html>
