@@ -1,5 +1,5 @@
 // import $ from "jquery";
-// import SumOfMultiple from './SumOfMultiple';
+
 
 $('#myButton').on('click', function () {
     const $btn = $(this).button('loading');
@@ -24,4 +24,23 @@ $('#check-palindrome').on('click', function () {
     $('.isPalindrome').text(isPalindrome());
     $btn.button('reset');
 });
+
+$('#check-longest').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.longest').text(longestWord());
+    $btn.button('reset');
+});
+
+$('#title-case').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.titleCase').text(titleCase());
+    $btn.button('reset');
+});
+
+$('#factorialize').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.factorial').text(factorialize());
+    $btn.button('reset');
+});
+
 

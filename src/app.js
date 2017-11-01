@@ -9,7 +9,7 @@ import 'font-awesome/scss/font-awesome.scss';
 // const app = document.getElementById('app');
 // app.innerHTML = Multiple;
 
-Algoritms();
+script;
 
 
 
