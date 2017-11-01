@@ -19,6 +19,7 @@ function evenNumber(arr) {
     let result = [];
     let theResult;
     arr = document.querySelector('#arrinput').value;
+    arr = arr.split(',').map(Number);
     document.querySelector('#arrinput').value = "";
     // console.log(arr);
     if(arr.length === 0){
@@ -125,4 +126,56 @@ function factorialize(num) {
         }
         return (num + "! = " + result);
     }
+}
+
+//Find the maximum of an array
+function findMax(arr) {
+    arr = document.querySelector('#array-input').value;
+    // document.querySelector('#array-input').value = "";
+    arr = arr.split(',').map(Number);
+    if(arr.length > 1) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+            // console.log(" max = ", max);
+        }
+        return "The maximum number is " + max;
+    }
+    return "Please enter an array of numbers!"
+}
+//Find the minimum of an array
+function findMin(arr) {
+    arr = document.querySelector('#array-input').value;
+    // document.querySelector('#array-input').value = "";
+    arr = arr.split(',').map(Number);
+    if(arr.length > 1){
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i] < min) {
+                min = arr[i];
+            }
+            // console.log(" min = ", min);
+        }
+        return "The minimum number is " + min;
+    }
+    return "Please enter an array of numbers!"
+}
+
+//Repeat a string
+function repeatString(str, n) {
+    str = document.querySelector('#string-input').value;
+    document.querySelector('#string-input').value = "";
+    n = document.querySelector('#times-input').value;
+    document.querySelector('#times-input').value = "";
+    let newStr = "";
+    if(str.length >= 1 && n > 0) {
+        for (let i = 1; i <= n; i++ ){
+            newStr += str + " ";
+        }
+        console.log(newStr)
+        return "Repeat the string for " + n + " times: " + newStr;
+    }
+    return "The input is empty.Please enter a string and a number "
 }

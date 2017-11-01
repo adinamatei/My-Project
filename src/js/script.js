@@ -43,4 +43,21 @@ $('#factorialize').on('click', function () {
     $btn.button('reset');
 });
 
+$('#maximum').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.max').text(findMax());
+    $btn.button('reset');
+});
+$('#minimum').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.min').text(findMin());
+    $btn.button('reset');
+});
+
+
+$('#repeat').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.repeat-string').text(repeatString());
+    $btn.button('reset');
+});
 
