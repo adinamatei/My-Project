@@ -174,8 +174,76 @@ function repeatString(str, n) {
         for (let i = 1; i <= n; i++ ){
             newStr += str + " ";
         }
-        console.log(newStr)
         return "Repeat the string for " + n + " times: " + newStr;
     }
     return "The input is empty.Please enter a string and a number "
+}
+
+// Even Fibonacci numbers
+function fibonacci() {
+    let fiboNumber = [1, 2];
+    let nextNumber = 0;
+    let i = 0;
+    let sum = 0;
+    while (fiboNumber[i] + fiboNumber[i+1] <= 4000000){
+        nextNumber = fiboNumber[i] + fiboNumber[i+1];
+        fiboNumber.push(nextNumber);
+        i++;
+    }
+    for(let i = 0; i <= fiboNumber.length; i++) {
+        if(fiboNumber[i] % 2 === 0){
+            sum += fiboNumber[i];
+        }
+    }
+    return "Sum of the even Fibonacci numbers: " + sum;
+}
+
+//Largest prime factor
+function largestPrimeFactor(num) {
+    //check for factor of num
+    let primeFactor = [];
+    for (let i = 0; i <= Math.floor(Math.sqrt(num)); i++){
+        if(num % i === 0){
+            if(isPrime(i)){
+                primeFactor.push(i);
+            }
+        }
+    }
+    //find maximum of prime factors
+    let max = primeFactor[0];
+    for (let i = 0; i <= primeFactor.length; i++) {
+        if(max < primeFactor[i]) {
+            max = primeFactor[i];
+        }
+    }
+    return "The largest prime factor: " + max;
+    //check if a number is prime
+    function isPrime(n){
+        for (let i = 2; i < Math.floor(Math.sqrt(n)); i++){
+            if(n % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+//Sorting an array
+function sortArray(arr) {
+    arr = document.querySelector('#sort-input').value;
+    document.querySelector('#sort-input').value = "";
+    arr = arr.split(',').map(Number);
+    let sorted = false;
+    while (!sorted){
+        sorted = true;
+        for(let i = 0; i <= arr.length; i++){
+            if(arr[i] > arr[i+1]){
+                let temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+                sorted = false;
+            }
+        }
+    }
+    return "Sorted = " + arr;
 }

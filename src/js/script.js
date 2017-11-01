@@ -61,3 +61,21 @@ $('#repeat').on('click', function () {
     $btn.button('reset');
 });
 
+$('#fibonacci').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.fibonacci').text(fibonacci());
+    $btn.button('reset');
+});
+
+$('#largestPrime').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.primeFactor').text(largestPrimeFactor(600851475143));
+    $btn.button('reset');
+});
+
+$('#sorting').on('click', function () {
+    const $btn = $(this).button('loading');
+    $('.sortedArray').text(sortArray());
+    $btn.button('reset');
+});
+

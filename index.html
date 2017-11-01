@@ -4,8 +4,8 @@
   <title>Javascript Algorithms</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="./css/app.css">-->
-<link href="./public/css/main.css?095bc8fba3fbdac179ab" rel="stylesheet"></head>
+  <link rel="stylesheet" href="./css/app.css">
+<link href="./public/css/main.css?dc3f80007e5d0b10d755" rel="stylesheet"></head>
 <body>
 
   <!-- the Navbar -->
@@ -49,10 +49,11 @@
 
     <div class="emptyDiv"></div>
 
-
+<!-- ************************************************************************************ -->
       <!-- Challenge Container -->
       <div class="panel-group challengeContainer" id="accordion" role="tablist" aria-multiselectable="true">
 
+<!-- *********************************************************************************** -->
           <!-- 1. Multiples of 3 and 5 -->
           <div class="panel panel-default algorithm-card">
               <div class="panel-heading" role="tab" id="headingOne">
@@ -74,8 +75,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
+<!-- *********************************************************************************** -->
           <!-- 2. Even Number Checker -->
           <div class="panel panel-default algorithm-card">
               <div class="panel-heading" role="tab" id="heading2">
@@ -97,9 +97,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
-
+<!-- ************************************************************************************ -->
           <!-- 3. Reverse a string -->
           <div class="panel panel-default algorithm-card">
 
@@ -151,8 +149,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
+<!-- ************************************************************************************ -->
           <!--4. Check for palindromes-->
           <div class="panel panel-default algorithm-card">
               <!-- panel heading -->
@@ -192,7 +189,7 @@
                                       <p>never odd or even</p>
                                       <p>My age is 0, 0 si ega ym</p>
                                       <p>0_0 (: /-\ :) 0-0</p>
-                                      <p>raCeCa</p>
+                                      <p>raCeCar</p>
                                   </div>
                               </div>
                           </div>
@@ -204,8 +201,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
+<!-- ************************************************************************************* -->
           <!-- 5. Find the Longest Word in a String -->
           <div class="panel panel-default algorithm-card">
               <!-- panel heading -->
@@ -256,9 +252,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
-
+<!-- ************************************************************************************ -->
           <!-- 6. Title Case a Sentence-->
           <div class="panel panel-default algorithm-card">
               <!-- panel heading -->
@@ -308,8 +302,7 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
-
-
+<!-- ************************************************************************************ -->
           <!-- 7. Factorialize a Number -->
           <div class="panel panel-default algorithm-card">
               <!-- panel heading -->
@@ -338,17 +331,180 @@
               </div>
           </div> <!-- /.panel-default .algorithm-card -->
 
+<!-- ************************************************************************************ -->
+          <!-- 8. Maximum and minimum of an array -->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading8">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                          Maximum and minimum of an array
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse8" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading8">
+
+                  <div class="panel-body">
+                      <input id="array-input" placeholder=" Enter the numbers here">
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="maximum" data-toggle="collapse" data-target=".max" aria-expanded="false">Maximum</button>
+                      <button class="btn btn-success" type="button" id="minimum" data-toggle="collapse" data-target=".min" aria-expanded="false">Minimum</button>
+                  </div>
+              </div>
+
+                  <!-- The answer -->
+                  <div class="max"></div>
+                  <div class="min"></div>
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+<!-- ************************************************************************************ -->
+          <!-- 9. Repeat a string -->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading9">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                          Repeat a String
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse9" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading9">
+
+                  <div class="panel-body">
+                      <input id="string-input" placeholder=" Enter a string here">
+                      <input id="times-input" placeholder=" How many times">
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="repeat" data-toggle="collapse" data-target=".repeat-string" aria-expanded="false">Repeat</button>
+
+                  </div>
+              </div>
+
+              <!-- The answer -->
+              <div class="repeat-string"></div>
+
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+<!-- ************************************************************************************ -->
+          <!-- 10. Even Fibonacci numbers -->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading10">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                          Sum of Even Fibonacci numbers
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse10" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading10">
+
+                  <div class="panel-body">
+                      <p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. The first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...<br>
+                          By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="fibonacci" data-toggle="collapse" data-target=".fibonacci" aria-expanded="false">Fibonacci</button>
+
+                  </div>
+              </div>
+
+              <!-- The answer -->
+              <div class="fibonacci"></div>
+
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+<!-- ************************************************************************************ -->
+          <!-- 11. Largest prime factor -->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading11">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                          Largest prime factor
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse11" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading11">
+
+                  <div class="panel-body">
+                      <p>The prime factors of 13195 are 5, 7, 13 and 29.<br>
+                          What is the largest prime factor of the number 600851475143 ?
+                      </p>
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="largestPrime" data-toggle="collapse" data-target=".primeFactor" aria-expanded="false">Check</button>
+
+                  </div>
+              </div>
+
+              <!-- The answer -->
+              <div class="primeFactor"></div>
+
+          </div> <!-- /.panel-default .algorithm-card -->
+
+
+<!-- ************************************************************************************ -->
+          <!-- 12. Sort an array -->
+          <div class="panel panel-default algorithm-card">
+              <!-- panel heading -->
+              <div class="panel-heading" role="tab" id="heading12">
+                  <h1 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                          Sorting an Array
+                      </a>
+                  </h1>
+              </div>  <!-- panel-heading-->
+
+              <!-- hidden panel collapse-->
+              <div id="collapse12" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading12">
+
+                  <div class="panel-body">
+                      <input id="sort-input" placeholder=" Enter the numbers here">
+                  </div>
+
+                  <!--Buttons div -->
+                  <div class="button-area">
+                      <button class="btn btn-success" type="button" id="sorting" data-toggle="collapse" data-target=".sortedArray" aria-expanded="false">Sort</button>
+
+                  </div>
+              </div>
+
+              <!-- The answer -->
+              <div class="sortedArray"></div>
+
+          </div> <!-- /.panel-default .algorithm-card -->
+
 
 
       </div> <!-- /.panel-group .challengeContainer  -->
-
-
   </div> <!-- /.container  -->
+
+
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!--<script src="js/script.js"></script>-->
-  <!--<script src="js/challenges.js"></script>-->
-<script type="text/javascript" src="./public/js/bundle.js?095bc8fba3fbdac179ab"></script></body>
+  <script src="js/script.js"></script>
+  <script src="js/challenges.js"></script>
+<script type="text/javascript" src="./public/js/bundle.js?dc3f80007e5d0b10d755"></script></body>
 </html>
