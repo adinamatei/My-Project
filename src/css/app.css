@@ -16,16 +16,20 @@ body {
 }
 
 .container {
-    margin: 75px auto;
-
+    margin: 7.5em auto;
+    display: grid;
+    width: 70%;
 }
 .row {
+    margin: 20px auto 40px;
+}
+.myHeader {
     -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
     padding: 30px;
-    margin: 20px auto 40px;
     text-align: center;
+    width: 100%;
 }
 #fontWeight {
     font-size: 4.2em;
@@ -37,8 +41,10 @@ body {
     height: 0.5em;
     vertical-align: bottom;
     width: 100%;
-    border-top: 1px solid #e0e0e0;;
+    border-top: 1px solid #e0e0e0;
 }
+
+/*Algorithms page*/
 .algorithm-card {
     -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
     -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
@@ -86,4 +92,32 @@ input#string-input,
 input#times-input{
     width: 45%;
     margin-right: 20px;
+}
+
+/* OOP page*/
+.container-fluid {
+    border: 2px solid gray;
+}
+.obj-description {
+    border: 1px solid #9e9e9e;
+    padding: 5px;
+    text-align: inherit;
+    line-height: 1.5;
+}
+h4 {
+    line-height: 1.7;
+}
+
+.object-card {
+    -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
+    padding: 30px;
+    margin: 20px auto;
+}
+.object-card:hover {
+    -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    cursor: pointer;
 }
