@@ -88,3 +88,38 @@ var secondStudent = new Student("Tom", "Patterson", "tomprince@mail.com");
 secondStudent.getGrades(9, 5);
 secondStudent.getGrades(7, 4);
 console.log("Name: " + secondStudent.name() + ", Grades: " + secondStudent.showTheGrades());
+
+
+//Polymorphism
+var Animal = function() {};
+Animal.prototype.says = function() {
+    return "I am an animal";
+};
+
+var Dog = function() {};
+Dog.prototype = Object.create(Animal.prototype);
+// Overriding Animal's says function
+Dog.prototype.says = function() {
+    return "I am a dog";
+};
+
+var Cat = function() {};
+Cat.prototype = Object.create(Animal.prototype);
+// Overriding Animal's says function
+Cat.prototype.says = function() {
+    return "I am a cat";
+};
+
+var Horse = function() {};
+Horse.prototype = Object.create(Animal.prototype);
+
+var animal = [new Animal(), new Dog(), new Cat(), new Horse() ];
+
+var allAnimals = function (animal) {
+    for (var i = 0; i < animal.length; i++) {
+        console.log(animal[i].says());
+    }
+};
+console.log(allAnimals(animal));
+
+
