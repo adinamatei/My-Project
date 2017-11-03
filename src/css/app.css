@@ -95,7 +95,7 @@ input#times-input{
 }
 
 /* OOP page*/
-.container-fluid {
+.bordered {
     border: 2px solid gray;
 }
 .obj-description {
@@ -120,4 +120,11 @@ h4 {
     -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
     cursor: pointer;
+}
+.js-link {
+    text-align: center;
+    padding: 1em;
+}
+.example-description{
+    line-height: 2;
 }

@@ -21,6 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- TODO -- add un logo brand cap de fata -->
                 <a class="navbar-brand" href="#">Adina Matei</a>
             </div>
 
@@ -53,7 +54,7 @@
 
 <!--*******************************************************************-->
         <!-- OOP description -->
-<div class="container-fluid">
+<div class="container-fluid bordered">
     <div class="row obj-description">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <h4>
@@ -63,7 +64,7 @@
                     Building applications whit objects allows us to adopt some valuable techniques:
                     <li><b>Inheritance</b> -- objects can inherit characteristics from other objects</li>
                     <li><b>Encapsulation</b> -- refers to enclosing (encapsulate) all the functionalities of an object inside that object so that methods and properties are hidden for the rest of application</li>
-                    <li><b>Polymorphism</b> -- different objects can share the same methods or properties, while their implementation may differ</li>
+                    <li><b>Polymorphism</b> -- the ability of different objects to implement the same functionality</li>
                     <li><b>Abstraction</b> -- creating a simple model of a more complex thing, which represents its most important aspects in a way that is easy to work with for our program's purposes</li>
                 </ul>
             </h4>
@@ -75,30 +76,58 @@
     <div class="panel panel-default object-card">
         <div class="panel-heading" role="tab" id="heading1">
             <h1 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">-->
                     Public and Private Properties and Methods
-                </a>
+                <!--</a>-->
             </h1>
         </div>
         <!-- hidden panel -->
-        <div id="collapse1" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading1">
+        <!--<div id="collapse1" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading1">-->
             <div class="panel-body">
                 <!-- TODO - some text here-->
-                <p>Some text here</p>
-                <iframe
-                        width="100%" height="400"
-                        src="//jsfiddle.net/4249p4uy/6/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
-
-                </iframe>
-                <!--<script async src="//jsfiddle.net/4249p4uy/embed/"></script>-->
-            </div>
-
-        </div>
+                <div class="example-description">
+                    <p>In this example I've defined a constructor function Employee, with private fields available only inside the Employee constructor and public field available  inside and outside the Employee and also created instances of the Employee object</p>
+                </div>
+                <div class="js-link">
+                    <iframe
+                            width="90%" height="400"
+                            src="//jsfiddle.net/4249p4uy/13/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                    </iframe>
+                </div>
+            </div> <!-- /.panel-body -->
+        <!--</div>--> <!-- /.panel-collapse -->
     </div> <!-- /.panel-default .object-card -->
 
-        <!--<div>-->
 
-        <!--</div>-->
+    <!-- ***************************************************** -->
+    <!-- Encapsulated and Inheritance -->
+    <div class="panel panel-default object-card">
+        <div class="panel-heading" role="tab" id="heading2">
+            <h1 class="panel-title">
+                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">-->
+                Encapsulation
+                <!--</a>-->
+            </h1>
+        </div>
+        <!-- hidden panel -->
+        <!--<div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">-->
+        <div class="panel-body">
+            <!-- TODO - some text here-->
+            <div class="example-description">
+                <p>Initializing the instance properties, these will be defined on each Student instance that is created.<br>
+                    Overwriting the prototype property whit an object literal, and defined all methods (that will be inherited by the Student instanced) in this object.<br>
+                    By overwriting the prototype with a new object literal we have all the methods organized in one place, and you can better see the encapsulation that we are after.</p>
+            </div>
+            <div class="js-link">
+                <iframe
+                        width="90%" height="400"
+                        src="//jsfiddle.net/c6pkwn21/5/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                </iframe>
+            </div>
+        </div> <!-- /.panel-body -->
+        <!--</div>--> <!-- /.panel-collapse -->
+    </div> <!-- /.panel-default .object-card -->
+
 
 </div>
     </div> <!-- /.container Page content -->
