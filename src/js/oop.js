@@ -123,3 +123,41 @@ var allAnimals = function (animal) {
 console.log(allAnimals(animal));
 
 
+
+//Classes and Inheritance in ES6
+class Person {
+    constructor (name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    getInfo() {
+        return "Hello, my name is " + this.name + " and I have " +
+            this.age + " years old.";
+    }
+}
+class Adult extends Person{
+    constructor(name, age, occupation) {
+        super(name, age);
+        this.ocupation = occupation;
+    }
+    getInfo() {
+        return super.getInfo() + "I am a " + this.ocupation;
+    }
+}
+
+class Child extends Person {
+    constructor(name, age) {
+        super(name, age);
+    }
+    getInfo() {
+        return super.getInfo() + " I am a student!"
+    }
+}
+
+const person1 = new Adult("Adina", 30, "web developer" );
+console.log(person1.name);
+console.log(person1.getInfo());
+const person2 = new Child("Maria", 12);
+console.log(person2.getInfo());
+
+
