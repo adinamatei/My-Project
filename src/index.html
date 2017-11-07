@@ -2,13 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/app.css">
 
 </head>
 <body>
+    <!-- the Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- TODO -- add un logo brand girl head -->
+                <a class="navbar-brand" href="index.html">Adina Matei</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="algorithms.html">Algorithms</a></li>
+                            <li><a href="oop.html">OOP</a></li>
+                            <li><a href="#">JS Validator</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://github.com/adinamatei">GitHub</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div id="section1">
+        <div class="container">
+            <div class="my-parallax">
+
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section1 -->
+
+    <div id="section2">
+        <div class="container new-color">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="about-me">
+                        <img src="./img/my-photo.jpg" alt="my photo">
+                        <h1>ABOUT ME</h1>
+                        <div class="text-description">
+                            <p>I am passionate about Web Development and I am decided to fully commit to this new career path</p>
+                            <p>I'm a positive and friendly person. Also, I love to set goals and achieve them.</p>
+                            <p>My important qualities: self-motivated, ability overcome difficulties and ability to learn.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="skills ">
+                        <h1>Skills</h1>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>Bootstrap</li>
+                            <li>Node.js</li>
+                            <li>Webpack</li>
+                            <li>Git versioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /#section2 -->
+
+
+    <div id="section3">
+        <div class="container">
+            <div class="my-parallax2">
+
+
+                <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <h3>“You just can’t beat the person who never gives up.”</h3>
+                                <p> -- Babe Ruth --</p>
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="carousel-caption">
+                                <h3>“There will be obstacles. There will be doubters. There will be mistakes. But with hard work, there are no limits.“</h3>
+                                <p>-- Michael Phelps --</p>
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="carousel-caption">
+                                <h3>“Change your life today. Don’t gamble on the future, act now, without delay.“ </h3>
+                                <p>-- Simone de Beauvoir --</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section3 -->
+
+
+    <div id="section4">
+        <div class="container new-color">
+            <div class="row">
+
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section4 -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="js/script.js"></script>
+<script src="js/oop.js"></script>
 </body>
 </html>

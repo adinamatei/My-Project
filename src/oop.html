@@ -22,13 +22,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- TODO -- add un logo brand cap de fata -->
-                <a class="navbar-brand" href="#">Adina Matei</a>
+                <a class="navbar-brand" href="index.html">Adina Matei</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -45,150 +45,144 @@
     </nav>
 
     <!-- Page content -->
-    <div class="container">
+    <div class="container my-container">
         <div class="row myHeader">
             <h1 id="fontWeight">Object Oriented Programing in JavaScript</h1>
         </div> <!-- /.row -->
 
-    <div class="emptyDiv"></div>
+        <div class="emptyDiv"></div>
 
 <!--*******************************************************************-->
         <!-- OOP description -->
-<div class="container-fluid bordered">
-    <div class="row obj-description">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <h4>
-                The basic idea of Object Oriented Programming (OOP) is that we use objects to model things from real life in our applications, and provide a simple way to access the functionality that would otherwise be hard to make use of. <br>
-                Object can contain related data and code, which represent information about the things you are trying to model, and functionality or behavior that you want it to have.<br>
-                <ul>
-                    Building applications whit objects allows us to adopt some valuable techniques:
-                    <li><b>Inheritance</b> -- objects can inherit characteristics from other objects</li>
-                    <li><b>Encapsulation</b> -- refers to enclosing (encapsulate) all the functionalities of an object inside that object so that methods and properties are hidden for the rest of application</li>
-                    <li><b>Polymorphism</b> -- the ability of different objects to implement the same functionality</li>
-                    <li><b>Abstraction</b> -- creating a simple model of a more complex thing, which represents its most important aspects in a way that is easy to work with for our program's purposes</li>
-                </ul>
-            </h4>
-        </div>
-    </div> <!-- /.row .obj-description -->
-
-    <!-- ***************************************************** -->
-    <!-- Public and Private -->
-    <div class="panel panel-default object-card">
-        <div class="panel-heading" role="tab" id="heading1">
-            <h1 class="panel-title">
-                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">-->
-                    Public and Private Properties and Methods
-                <!--</a>-->
-            </h1>
-        </div>
-        <!-- hidden panel -->
-        <!--<div id="collapse1" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading1">-->
-            <div class="panel-body">
-                <div class="example-description">
-                    <p>In this example I've defined a constructor function <code>Employee</code>, with private fields available only inside the <code>Employee</code> constructor and public field available  inside and outside the <code>Employee</code> and also created instances of the <code>Employee</code> object</p>
+        <div class="container-fluid bordered">
+            <div class="row obj-description">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h4>
+                        The basic idea of Object Oriented Programming (OOP) is that we use objects to model things from real life in our applications, and provide a simple way to access the functionality that would otherwise be hard to make use of. <br>
+                        Object can contain related data and code, which represent information about the things you are trying to model, and functionality or behavior that you want it to have.<br>
+                        <ul>
+                            Building applications whit objects allows us to adopt some valuable techniques:
+                            <li><b>Inheritance</b> -- objects can inherit characteristics from other objects</li>
+                            <li><b>Encapsulation</b> -- refers to enclosing (encapsulate) all the functionalities of an object inside that object so that methods and properties are hidden for the rest of application</li>
+                            <li><b>Polymorphism</b> -- the ability of different objects to implement the same functionality</li>
+                            <li><b>Abstraction</b> -- creating a simple model of a more complex thing, which represents its most important aspects in a way that is easy to work with for our program's purposes</li>
+                        </ul>
+                    </h4>
                 </div>
-                <div class="js-link">
-                    <iframe
-                            width="90%" height="400"
-                            src="//jsfiddle.net/4249p4uy/13/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
-                    </iframe>
+            </div> <!-- /.row .obj-description -->
+
+            <!-- ***************************************************** -->
+            <!-- Public and Private -->
+            <div class="panel panel-default object-card">
+                <div class="panel-heading" role="tab" id="heading1">
+                    <h1 class="panel-title">
+                        <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">-->
+                            Public and Private Properties and Methods
+                        <!--</a>-->
+                    </h1>
                 </div>
-            </div> <!-- /.panel-body -->
-        <!--</div>--> <!-- /.panel-collapse -->
-    </div> <!-- /.panel-default .object-card -->
+                <!-- hidden panel -->
+                <!--<div id="collapse1" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading1">-->
+                    <div class="panel-body">
+                        <div class="example-description">
+                            <p>In this example I've defined a constructor function <code>Employee</code>, with private fields available only inside the <code>Employee</code> constructor and public field available  inside and outside the <code>Employee</code> and also created instances of the <code>Employee</code> object</p>
+                        </div>
+                        <div class="js-link">
+                            <iframe
+                                    width="90%" height="400"
+                                    src="//jsfiddle.net/4249p4uy/13/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                            </iframe>
+                        </div>
+                    </div> <!-- /.panel-body -->
+                <!--</div>--> <!-- /.panel-collapse -->
+            </div> <!-- /.panel-default .object-card -->
 
 
-    <!-- ***************************************************** -->
-    <!-- Encapsulation and Inheritance -->
-    <div class="panel panel-default object-card">
-        <div class="panel-heading" role="tab" id="heading2">
-            <h1 class="panel-title">
-                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">-->
-                Encapsulation
-                <!--</a>-->
-            </h1>
+            <!-- ***************************************************** -->
+            <!-- Encapsulation and Inheritance -->
+            <div class="panel panel-default object-card">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h1 class="panel-title">
+                        <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">-->
+                        Encapsulation
+                        <!--</a>-->
+                    </h1>
+                </div>
+                <!-- hidden panel -->
+                <!--<div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">-->
+                <div class="panel-body">
+                    <div class="example-description">
+                        <p>Initializing the instance properties, these will be defined on each <code>Student</code> instance that is created.<br>
+                            Overwriting the prototype property whit an object literal, and defined all methods (that will be inherited by the <code>Student</code> instanced) in this object.<br>
+                            By overwriting the prototype with a new object literal we have all the methods organized in one place, and you can better see the encapsulation that we are after.</p>
+                    </div>
+                    <div class="js-link">
+                        <iframe
+                                width="90%" height="400"
+                                src="//jsfiddle.net/c6pkwn21/5/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                        </iframe>
+                    </div>
+                </div> <!-- /.panel-body -->
+                <!--</div>--> <!-- /.panel-collapse -->
+            </div> <!-- /.panel-default .object-card -->
+
+
+            <!-- ***************************************************** -->
+            <!-- Polymorphism -->
+            <div class="panel panel-default object-card">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h1 class="panel-title">
+                        <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse2">-->
+                        Polymorphism
+                        <!--</a>-->
+                    </h1>
+                </div>
+                <!-- hidden panel -->
+                <!--<div id="collapse3" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading3">-->
+                <div class="panel-body">
+                    <div class="example-description">
+                        <p>In this example, polymorphism is highlighted in the fact that <code>Animal</code> object has <code>says()</code> method and the method (once called) behaves properly for any object.</p>
+                    </div>
+                    <div class="js-link">
+                        <iframe
+                                width="90%" height="400"
+                                src="//jsfiddle.net/j3fo3cgr/9/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                        </iframe>
+                    </div>
+                </div> <!-- /.panel-body -->
+                <!--</div>--> <!-- /.panel-collapse -->
+            </div> <!-- /.panel-default .object-card -->
+
+
+            <!-- ***************************************************** -->
+            <!-- Polymorphism -->
+            <div class="panel panel-default object-card">
+                <div class="panel-heading" role="tab" id="heading4">
+                    <h1 class="panel-title">
+                        <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse4">-->
+                        Classes and Inheritance in ES6
+                        <!--</a>-->
+                    </h1>
+                </div>
+                <!-- hidden panel -->
+                <!--<div id="collapse4" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading4">-->
+                <div class="panel-body">
+                    <div class="example-description">
+                        <p>In OOP, we can create new classes (<code>Child</code> and <code>Adult</code>) based on other classes (<code>Person</code>). This new classes can  inherit the data and features of the parent class <code>Person</code>.</p>
+                    </div>
+                    <div class="js-link">
+                        <iframe
+                                width="100%" height="400"
+                                src="//jsfiddle.net/10mom30b/4/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                        </iframe>
+                    </div>
+                </div> <!-- /.panel-body -->
+                <!--</div>--> <!-- /.panel-collapse -->
+            </div> <!-- /.panel-default .object-card -->
         </div>
-        <!-- hidden panel -->
-        <!--<div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">-->
-        <div class="panel-body">
-            <div class="example-description">
-                <p>Initializing the instance properties, these will be defined on each <code>Student</code> instance that is created.<br>
-                    Overwriting the prototype property whit an object literal, and defined all methods (that will be inherited by the <code>Student</code> instanced) in this object.<br>
-                    By overwriting the prototype with a new object literal we have all the methods organized in one place, and you can better see the encapsulation that we are after.</p>
-            </div>
-            <div class="js-link">
-                <iframe
-                        width="90%" height="400"
-                        src="//jsfiddle.net/c6pkwn21/5/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
-                </iframe>
-            </div>
-        </div> <!-- /.panel-body -->
-        <!--</div>--> <!-- /.panel-collapse -->
-    </div> <!-- /.panel-default .object-card -->
-
-
-    <!-- ***************************************************** -->
-    <!-- Polymorphism -->
-    <div class="panel panel-default object-card">
-        <div class="panel-heading" role="tab" id="heading3">
-            <h1 class="panel-title">
-                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse2">-->
-                Polymorphism
-                <!--</a>-->
-            </h1>
-        </div>
-        <!-- hidden panel -->
-        <!--<div id="collapse3" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading3">-->
-        <div class="panel-body">
-            <div class="example-description">
-                <p>In this example, polymorphism is highlighted in the fact that <code>Animal</code> object has <code>says()</code> method and the method (once called) behaves properly for any object.</p>
-            </div>
-            <div class="js-link">
-                <iframe
-                        width="90%" height="400"
-                        src="//jsfiddle.net/j3fo3cgr/9/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
-                </iframe>
-            </div>
-        </div> <!-- /.panel-body -->
-        <!--</div>--> <!-- /.panel-collapse -->
-    </div> <!-- /.panel-default .object-card -->
-
-
-    <!-- ***************************************************** -->
-    <!-- Polymorphism -->
-    <div class="panel panel-default object-card">
-        <div class="panel-heading" role="tab" id="heading4">
-            <h1 class="panel-title">
-                <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse4">-->
-                Classes and Inheritance in ES6
-                <!--</a>-->
-            </h1>
-        </div>
-        <!-- hidden panel -->
-        <!--<div id="collapse4" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading4">-->
-        <div class="panel-body">
-            <div class="example-description">
-                <p>In OOP, we can create new classes (<code>Child</code> and <code>Adult</code>) based on other classes (<code>Person</code>). This new classes can  inherit the data and features of the parent class <code>Person</code>.</p>
-            </div>
-            <div class="js-link">
-                <iframe
-                        width="100%" height="400"
-                        src="//jsfiddle.net/10mom30b/4/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
-                </iframe>
-            </div>
-        </div> <!-- /.panel-body -->
-        <!--</div>--> <!-- /.panel-collapse -->
-    </div> <!-- /.panel-default .object-card -->
 
 
 
-
-
-
-
-
-
-</div>
     </div> <!-- /.container Page content -->
 
 

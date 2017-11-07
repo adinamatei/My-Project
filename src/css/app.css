@@ -14,14 +14,17 @@ body {
 .navbar-header {
     padding-left: 15px;
 }
-
-.container {
+/*.my-container{*/
+    /*width: 70%;*/
+/*}*/
+.container.my-container {
     margin: 7.5em auto;
     display: grid;
     width: 70%;
+    padding: 0;
 }
 .row {
-    margin: 20px auto 40px;
+    margin: 40px auto 40px;
 }
 .myHeader {
     -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
@@ -44,6 +47,57 @@ body {
     border-top: 1px solid #e0e0e0;
 }
 
+/* ***************************************************** */
+/*Home Page*/
+.container{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+#section1{
+    margin-top: 50px;
+}
+
+.my-parallax {
+    background: url("../img/bkg.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.container.new-color{
+    background-color: lightseagreen;
+    height: 500px;
+}
+.about-me,
+.skills {
+    border: 1px solid #9e9e9e;
+    height: 400px;
+    padding: 30px;
+}
+img {
+    border-radius: 50px;
+    float: right;
+}
+.text-description {
+    display: inline-block;
+    padding-top: 25px;
+}
+.skills {
+    font-size: 20px;
+}
+.my-parallax2{
+    background: url("../img/bkg2.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+/*carousel*/
+#myCarousel .item {
+    height: 400px;
+}
+
+
+/* ********************************************* */
 /*Algorithms page*/
 .algorithm-card {
     -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
@@ -59,7 +113,6 @@ body {
     cursor: pointer;
 }
 .shows-answer{
-    /*border: 1px solid red;*/
     padding: 20px;
 }
 .panel-title {
@@ -93,7 +146,7 @@ input#times-input{
     width: 45%;
     margin-right: 20px;
 }
-
+/* ********************************************************** */
 /* OOP page*/
 .bordered {
     border: 2px solid gray;
