@@ -22,7 +22,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- TODO -- add un logo brand girl head -->
                 <a class="navbar-brand" href="index.html">Adina Matei</a>
             </div>
 
@@ -30,6 +29,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section4">Portfolio</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -40,6 +41,7 @@
                             <li><a href="https://github.com/adinamatei">GitHub</a></li>
                         </ul>
                     </li>
+                    <li><a href="#section5">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -50,38 +52,45 @@
     <div id="section1">
         <div class="container">
             <div class="my-parallax">
-
+                <div>
+                    <h1>Portfolio Website</h1>
+                </div>
             </div>
         </div> <!-- /.container -->
     </div><!-- /#section1 -->
 
-    <div id="section2">
-        <div class="container new-color">
+    <div id="section2" class="my-color">
+        <div class="container small">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="about-me">
-                        <img src="./img/my-photo.jpg" alt="my photo">
-                        <h1>ABOUT ME</h1>
-                        <div class="text-description">
-                            <p>I'm a positive and friendly person. Also, I love to set goals and achieve them.</p>
-                            <p>My important qualities: self-motivated, ability overcome difficulties and ability to learn.</p>
-                        </div>
+                <div class="overlay"></div>
+                <div class="about-container">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="about-me">
+                            <img src="./img/my-photo.jpg" class="my-photo" alt="my photo">
+                            <h1>ABOUT ME</h1>
+                            <div class="text-description">
+                                <p>I have gained some skills around technology and product development, and I strongly believe technology can and should enrich every single life this universe has to offer.</p>
+                                <p>I like to build things whit technology and I enjoy to create websites from start to finish.</p>
+                                <p>I'm a positive and friendly person. Also, I love to set goals and achieve them.</p>
+                                <p>My important qualities: self-motivated, ability overcome difficulties and ability to learn.</p>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="skills ">
-                        <h1>Skills</h1>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Bootstrap</li>
-                            <li>Node.js</li>
-                            <li>Webpack</li>
-                            <li>Git versioning</li>
-                        </ul>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="skills ">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                                <li>Bootstrap</li>
+                                <li>Node.js</li>
+                                <li>Webpack</li>
+                                <li>Git versioning</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,8 +101,6 @@
     <div id="section3">
         <div class="container">
             <div class="my-parallax2">
-
-
                 <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
@@ -139,15 +146,126 @@
     </div><!-- /#section3 -->
 
 
-    <div id="section4">
-        <div class="container new-color">
+    <div id="section4" class="my-color">
+        <div class="container small" id="portfolio-container">
             <div class="row">
+                <div class="overlay"></div>
+                    <div class="portfolio">
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/project1.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="http://adinamatei.github.io/marketingAgency/">
+                                        <h3>Marketing Agency Layout</h3>
+                                        <hr>
+                                        <p>HTML/CSS</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/project2.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="https://adinamatei.github.io/Adventure/">
+                                        <h3>Adventure & Travel Blog</h3>
+                                        <hr>
+                                        <p>HTML/CSS</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/lol.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="https://adinamatei.github.io/MinistryOfLeague">
+                                        <h3>LOL Community Layout</h3>
+                                        <hr>
+                                        <p>Bootstrap</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/payment.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="https://adinamatei.github.io/PaymentCart/">
+                                        <h3>Payment Cart</h3>
+                                        <hr>
+                                        <p>CSS Grid System</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/color-game.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="https://adinamatei.github.io/ColorGame/">
+                                        <h3>Color Guessing Game</h3>
+                                        <hr>
+                                        <p>JavaScript</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                            <figure>
+                                <img src="./img/todo.jpg" class="port-img">
+                                <figcaption>
+                                    <a href="https://adinamatei.github.io/TodoList/">
+                                        <h3>A TODO list</h3>
+                                        <hr>
+                                        <p>jQuery</p>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
 
+                    </div>
             </div>
         </div> <!-- /.container -->
     </div><!-- /#section4 -->
 
+    <div id="section5">
+        <div class="container">
+            <div class="my-parallax3">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="contact">
+                                    <h1>Contact</h1>
+                                    <div class="contact-area">
+                                        <div>
+                                            <button type="button" class="btn btn-default btn-lg">
+                                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                            </button>
+                                            <h2>Matei Adina</h2>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-default btn-lg">
+                                                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                            </button>
+                                            <h2>0753 200 802</h2>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-default btn-lg">
+                                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                            </button>
+                                            <h2>adinamateim@gmail.com</h2>
+                                        </div>
+                                    </div>
 
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section5 -->
 
 
 
