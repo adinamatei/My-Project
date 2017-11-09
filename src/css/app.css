@@ -24,28 +24,9 @@ body {
     padding: 0;
 }
 .row {
-    margin: 40px auto 40px;
+    margin: 2% auto 10%;
 }
-.myHeader {
-    -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    padding: 30px;
-    text-align: center;
-    width: 100%;
-}
-#fontWeight {
-    font-size: 4.2em;
-    font-weight: 600;
-}
-.emptyDiv:after {
-    content:"";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 100%;
-    border-top: 1px solid #e0e0e0;
-}
+
 
 /* ***************************************************** */
 /*Home Page*/
@@ -66,15 +47,31 @@ body {
     height: 500px;
     width: 100%;
 }
-
 .my-parallax3{
     background: url("../img/bkg3.jpg") no-repeat fixed center;
     background-size: cover;
-    height: 500px;
+    height: 100%;
     width: 100%;
 }
+.home {
+    margin: 50px auto;
+    height: 100%;
+    /*width: 80%;*/
+    padding: 10%;
+}
+.home h1,
+.home h4,
+#portfolio-container h4,
+.contact h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 7px 0 2px rgba(150, 150, 150, 1);
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
 .my-color{
-    background-color: lightseagreen;
+    background-color: #222;
+    color: #999;
 }
 .container.small{
     height: auto;
@@ -86,15 +83,21 @@ body {
     width: 100%;
     height: 140px;
     opacity: .5;
-    background: linear-gradient(30deg,#20b2aa 12%,transparent 12.5%,transparent 87%,#20b2aa 87.5%,#20b2aa 0),linear-gradient(150deg,#20b2aa 12%,transparent 12.5%,transparent 87%,#20b2aa 87.5%,#20b2aa 0),linear-gradient(30deg,#20b2aa 12%,transparent 12.5%,transparent 87%,#20b2aa 87.5%,#20b2aa 0),linear-gradient(150deg,#20b2aa 12%,transparent 12.5%,transparent 87%,#20b2aa 87.5%,#20b2aa 0),linear-gradient(60deg,#32908b 25%,transparent 25.5%,transparent 75%,#32908b 75%,#32908b 0),linear-gradient(60deg,#32908b 25%,transparent 25.5%,transparent 75%,#32908b 75%,#32908b 0),#79a7a4;
+    background:linear-gradient(30deg,#222 12%,transparent 12.5%,transparent 87%,#222 87.5%,#222 0),linear-gradient(150deg,#222 12%,transparent 12.5%,transparent 87%,#222 87.5%,#222 0),linear-gradient(30deg,#222 12%,transparent 12.5%,transparent 87%,#222 87.5%,#222 0),linear-gradient(150deg,#222 12%,transparent 12.5%,transparent 87%,#222 87.5%,#222 0),linear-gradient(60deg,#333 25%,transparent 25.5%,transparent 75%,#333 75%,#333 0),linear-gradient(60deg,#333 25%,transparent 25.5%,transparent 75%,#333 75%,#333 0),#555;
     background-position: 0 0, 0 0,40px 70px,40px 70px,0 0,40px 70px;
     background-size: 80px 140px;
 }
+.about-me h1 {
+    display: inline;
+}
 .about-me,
 .skills {
-    border: 10px solid #29a19a;
+    border: 10px solid #333;
     height: 400px;
     padding: 30px;
+}
+li{
+    list-style: none;
 }
 img.my-photo {
     border-radius: 50px;
@@ -102,10 +105,16 @@ img.my-photo {
 }
 .text-description {
     display: inline-block;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
+    font-size: 18px;
 }
 .skills {
     font-size: 20px;
+    line-height: 2;
+}
+.skills h3 {
+    margin-bottom: 40px;
+    text-align: center;
 }
 /*carousel*/
 #myCarousel .item {
@@ -149,7 +158,7 @@ figure figcaption{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #4caca7;
+    background: #3b3b3b;
     padding: 20px;
     text-align: center;
     text-transform: capitalize;
@@ -163,20 +172,60 @@ figcaption a:hover {
     color: #fff;
     text-decoration: none;
 }
+.row.portfolio-area {
+    margin-bottom: 0;
+}
+.portfolio-button button{
+    background-color: #3b3b3b;
+    border: none;
+}
+.portfolio-button button:hover {
+    background-color: #4378ac;    
+}
+.portfolio-button a {
+    color: #afafaf;
+}
+.portfolio-button a:hover {
+    font-weight: normal;
+}
 .contact {
-    color: #fff;
-    width: 70%;
+    color: #f1f1f1;
+    width: 50%;
     margin: auto;
 }
 .contact-area{
     background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
     border-radius: 5px;
     padding: 15px 0;
-    margin-bottom: 20px;
+    margin: 50px auto 30px;
+}
+.contact-area span {
+    padding-right: 20px;
 }
 
 /* ********************************************* */
 /*Algorithms page*/
+.myHeader {
+    -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
+    padding: 30px;
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+#fontWeight {
+    font-size: 4.2em;
+    font-weight: 600;
+}
+.emptyDiv:after {
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+}
 .algorithm-card {
     -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
     -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.25);
@@ -234,6 +283,7 @@ input#times-input{
     padding: 5px;
     text-align: inherit;
     line-height: 1.5;
+    margin: 20px 0;
 }
 h4 {
     line-height: 1.7;
