@@ -1,27 +1,23 @@
 //Multiple of 3 and 5
 function sumOfMultiple(n) {
-    // const showAnswer = document.querySelector('.sum');
     let sum = 0;
     for(let i = 0; i <= n; i++){
         if (i % 3 === 0 || i % 5 === 0) {
             sum += i;
         }
     }
-
-    return `The sum of the multiples of 3 or 5 below 1000 is: ${sum}`;
+    return "The sum of the multiples of 3 or 5 below 1000 is: " + sum ;
 }
-// console.log(SumOfMultiple(9));
-
+document.getElementById("multiple-js").innerHTML  = sumOfMultiple;
 
 
 //Even Number Checker
 function evenNumber(arr) {
-    let result = [];
-    let theResult;
     arr = document.querySelector('#arrinput').value;
     arr = arr.split(',').map(Number);
     document.querySelector('#arrinput').value = "";
-    // console.log(arr);
+    let result = [];
+    let theResult;
     if(arr.length === 0){
         return ("Please type some numbers!");
     }
@@ -32,10 +28,11 @@ function evenNumber(arr) {
         }
         console.log(result);
     }
-
     theResult = "The even numbers of this array are: " + result;
     return theResult;
 }
+document.getElementById("even-js").innerHTML  = evenNumber;
+
 
 //Reverse a string
 function reverseString(str){
@@ -51,6 +48,7 @@ function reverseString(str){
     }
     return ('Use a phrase from the provided example');
 }
+document.getElementById("reverse-js").innerHTML  = reverseString;
 
 
 //Check for Palindrome
@@ -69,6 +67,7 @@ function isPalindrome(str){
     }
     return ("Please enter the text or use some of the examples");
 }
+document.getElementById("palindrome-js").innerHTML = isPalindrome;
 
 
 //Longest Word in a String
@@ -87,6 +86,7 @@ function longestWord(str) {
     }
     return ("Please enter your phrase or use some of the example");
 }
+document.getElementById("longest-js").innerHTML = longestWord;
 
 
 //Title Case a Sentence
@@ -106,6 +106,7 @@ function titleCase(str) {
     }
     return "Please enter your sentence or use some of the example"
 }
+document.getElementById("titlecase-js").innerHTML = titleCase;
 
 
 //Factorialize a Number
@@ -127,6 +128,8 @@ function factorialize(num) {
         return (num + "! = " + result);
     }
 }
+document.getElementById("factorial-js").innerHTML = factorialize;
+
 
 //Find the maximum of an array
 function findMax(arr) {
@@ -139,7 +142,6 @@ function findMax(arr) {
             if(arr[i] > max) {
                 max = arr[i];
             }
-            // console.log(" max = ", max);
         }
         return "The maximum number is " + max;
     }
@@ -156,12 +158,13 @@ function findMin(arr) {
             if(arr[i] < min) {
                 min = arr[i];
             }
-            // console.log(" min = ", min);
         }
         return "The minimum number is " + min;
     }
     return "Please enter an array of numbers!"
 }
+document.getElementById("maxmin-js").innerHTML = findMax + " "+ findMin;
+
 
 //Repeat a string
 function repeatString(str, n) {
@@ -178,6 +181,8 @@ function repeatString(str, n) {
     }
     return "The input is empty.Please enter a string and a number "
 }
+document.getElementById("repeat-js").innerHTML = repeatString;
+
 
 // Even Fibonacci numbers
 function fibonacci() {
@@ -197,6 +202,8 @@ function fibonacci() {
     }
     return "Sum of the even Fibonacci numbers: " + sum;
 }
+document.getElementById("fibonacci-js").innerHTML = fibonacci;
+
 
 //Largest prime factor
 function largestPrimeFactor(num) {
@@ -227,6 +234,8 @@ function largestPrimeFactor(num) {
         return true;
     }
 }
+document.getElementById("prime-js").innerHTML = largestPrimeFactor;
+
 
 //Sorting an array
 function sortArray(arr) {
@@ -247,3 +256,4 @@ function sortArray(arr) {
     }
     return "Sorted = " + arr;
 }
+document.getElementById("sort-js").innerHTML = sortArray;

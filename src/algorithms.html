@@ -71,14 +71,26 @@
               <!-- hidden panel -->
               <div id="collapseOne" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
-                      <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
-                  </div>
-                  <button class="btn btn-success" type="button" id="myButton" data-toggle="collapse" data-target=".sum" aria-expanded="false">
-                      Answer
-                  </button>
-                  <div class="sum"></div>
-              </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
+                              <div class="row button-row">
+                                  <button class="btn btn-success" type="button" id="myButton" data-toggle="collapse" data-target=".sum" aria-expanded="false">
+                                      Answer
+                                  </button>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="multiple-js" name="multiple-code" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                      <div class="sum"></div>
+                  </div> <!-- /.panel-body -->
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
+
 <!-- TODO - button press enter-->
 <!-- *********************************************************************************** -->
           <!-- 2. Even Number Checker -->
@@ -93,13 +105,25 @@
               <!-- hidden panel -->
               <div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">
                   <div class="panel-body">
-                      <input id="arrinput" placeholder=" Please type some numbers ">
-                  </div>
-                  <button class="btn btn-success" type="button" id="check-even" data-toggle="collapse in" data-target=".even-answer" aria-expanded="false">
-                      Answer
-                  </button>
-                  <div class="even-answer"></div>
-              </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="arrinput"  placeholder=" Please type some numbers ">
+                              <div class="row button-row">
+                                  <button class="btn btn-success" type="button" id="check-even" data-toggle="collapse in" data-target=".even-answer" aria-expanded="false">
+                                      Answer
+                                  </button>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="even-js" name="even-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+
+                          <div class="even-answer"></div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************ -->
@@ -119,39 +143,37 @@
               <div id="collapse3" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading3">
 
                   <div class="panel-body">
-                      <input id="stringinput" placeholder=" Type a string ">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="reverse-string" data-toggle="collapse in" data-target=".reverse" aria-expanded="false">Reverse</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs3-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs3-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel3">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="stringinput" placeholder=" Type a string ">
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                     <button class="btn btn-success" type="button" id="reverse-string" data-toggle="collapse in" data-target=".reverse" aria-expanded="false">Reverse</button>
+                                  </div>
+                                  <div class="col-md-8 col-sm-8 col-xs-12">
+                                      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#reverseExample" aria-expanded="false" aria-controls="collapseExample">
+                                          Example
                                       </button>
-                                      <h4 class="modal-title">String Example</h4>
+                                      <div class="collapse" id="reverseExample">
+                                          <div class="well">
+                                              <p>hello</p>
+                                              <p>htraE morf sgniteerG</p>
+                                              <p>Howdy</p>
+                                          </div>
+                                      </div>
                                   </div>
-                                  <div class="modal-body">
-                                      <p>hello</p>
-                                      <p>htraE morf sgniteerG</p>
-                                      <p>Howdy</p>
-                                  </div>
-                              </div>
+                              </div> <!-- /.row.button-row -->
                           </div>
-                      </div>
-                  </div>
-
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="reverse-js" name="reverse-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
                   <!-- The answer -->
                   <div class="reverse"></div>
-
-              </div>
+                  </div> <!-- /.panel-body -->
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************ -->
@@ -170,40 +192,41 @@
               <div id="collapse4" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading4">
 
                   <div class="panel-body">
-                      <input id="palin-input" placeholder=" Enter the text you'd like to check ">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="palin-input" placeholder=" Enter the text you would like to check ">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="check-palindrome" data-toggle="collapse in" data-target=".isPalindrome" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs4-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs4-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel4">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="check-palindrome" data-toggle="collapse in" data-target=".isPalindrome" aria-expanded="false">Check</button>
+                                  </div>
+                                  <div class="col-md-8 col-sm-8 col-xs-12">
+                                      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#palinExample" aria-expanded="false" aria-controls="collapseExample">
+                                          Example
                                       </button>
-                                      <h4 class="modal-title">Palindrome Examples</h4>
+                                      <div class="collapse" id="palinExample">
+                                          <div class="well">
+                                              <p>A man, a plan, a canal. Panama</p>
+                                              <p>never odd or even</p>
+                                              <p>My age is 0, 0 si ega ym</p>
+                                              <p>0_0 (: /-\ :) 0-0</p>
+                                              <p>raCeCar</p>
+                                          </div>
+                                      </div>
                                   </div>
-                                  <div class="modal-body">
-                                      <p>A man, a plan, a canal. Panama</p>
-                                      <p>never odd or even</p>
-                                      <p>My age is 0, 0 si ega ym</p>
-                                      <p>0_0 (: /-\ :) 0-0</p>
-                                      <p>raCeCar</p>
-                                  </div>
-                              </div>
+                              </div> <!-- /.row.button-row -->
                           </div>
-                      </div>
-                  </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="palindrome-js" name="palindrome-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
                   <!-- The answer -->
                   <div class="isPalindrome"></div>
-              </div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************* -->
@@ -222,39 +245,39 @@
               <div id="collapse5" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading5">
 
                   <div class="panel-body">
-                      <input id="longest-input" placeholder=" Enter your text here">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="longest-input" placeholder=" Enter your text here">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="check-longest" data-toggle="collapse in" data-target=".longest" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs5-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs5-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel5">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="check-longest" data-toggle="collapse in" data-target=".longest" aria-expanded="false">Check</button>
+                                  </div>
+                                  <div class="col-md-8 col-sm-8 col-xs-12">
+                                      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#longestExample" aria-expanded="false" aria-controls="collapseExample">Example
                                       </button>
-                                      <h4 class="modal-title">Phrase Examples</h4>
+                                      <div class="collapse" id="longestExample">
+                                          <div class="well">
+                                              <p>The quick brown fox jumped over the lazy dog</p>
+                                              <p>May the force be with you</p>
+                                              <p>What if we try a super-long word such as otorhinolaryngology</p>
+                                              <p>What is the average airspeed velocity of an unladen swallow</p>
+                                          </div>
+                                      </div>
                                   </div>
-                                  <div class="modal-body">
-                                      <p>The quick brown fox jumped over the lazy dog</p>
-                                      <p>May the force be with you</p>
-                                      <p>What if we try a super-long word such as otorhinolaryngology</p>
-                                      <p>What is the average airspeed velocity of an unladen swallow</p>
-                                  </div>
-                              </div>
+                              </div> <!-- /.row.button-row -->
                           </div>
-                      </div>
-                  </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="longest-js" name="longest-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
                   <!-- The answer -->
                   <div class="longest"></div>
-              </div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************ -->
@@ -271,40 +294,39 @@
 
               <!-- hidden panel collapse-->
               <div id="collapse6" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading6">
-
                   <div class="panel-body">
-                      <input id="sentence-input" placeholder=" Enter your sentence here">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="sentence-input" placeholder=" Enter your sentence here">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="title-case" data-toggle="collapse in" data-target=".titleCase" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs6-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs6-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel6">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="title-case" data-toggle="collapse in" data-target=".titleCase" aria-expanded="false">Check</button>
+                                  </div>
+                                  <div class="col-md-8 col-sm-8 col-xs-12">
+                                      <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#sentenceExample" aria-expanded="false" aria-controls="collapseExample">Example
                                       </button>
-                                      <h4 class="modal-title">Sentence Examples</h4>
+                                      <div class="collapse" id="sentenceExample">
+                                          <div class="well">
+                                              <p>I'm a little tea pot</p>
+                                              <p>sHoRt AnD sToUt</p>
+                                              <p>HERE IS MY HANDLE HERE IS MY SPOUT</p>
+                                          </div>
+                                      </div>
                                   </div>
-                                  <div class="modal-body">
-                                      <p>I'm a little tea pot</p>
-                                      <p>sHoRt AnD sToUt</p>
-                                      <p>HERE IS MY HANDLE HERE IS MY SPOUT</p>
-                                  </div>
-                              </div>
+                              </div> <!-- /.row.button-row -->
                           </div>
-                      </div>
-                  </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="titlecase-js" name="titlecase-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
                   <!-- The answer -->
                   <div class="titleCase"></div>
-              </div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************ -->
@@ -323,17 +345,27 @@
               <div id="collapse7" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading7">
 
                   <div class="panel-body">
-                      <input id="number-input" placeholder=" Enter your number here">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="number-input" type="number" placeholder=" Enter your number here">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="factorialize" data-toggle="collapse in" data-target=".factorial" aria-expanded="false">Factorialize</button>
-                  </div>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="factorialize" data-toggle="collapse in" data-target=".factorial" aria-expanded="false">Factorialize</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="factorial-js" name="factorial-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
-                  <!-- The answer -->
+                    <!-- The answer -->
                   <div class="factorial"></div>
-              </div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 <!-- ************************************************************************************ -->
@@ -352,19 +384,31 @@
               <div id="collapse8" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading8">
 
                   <div class="panel-body">
-                      <input id="array-input" placeholder=" Enter the numbers here">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="array-input" placeholder=" Enter the numbers here">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="maximum" data-toggle="collapse in" data-target=".max" aria-expanded="false">Maximum</button>
-                      <button class="btn btn-success" type="button" id="minimum" data-toggle="collapse in" data-target=".min" aria-expanded="false">Minimum</button>
-                  </div>
-              </div>
+                              <div class="row button-row">
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <button class="btn btn-success" type="button" id="maximum" data-toggle="collapse in" data-target=".max" aria-expanded="false">Maximum</button>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <button class="btn btn-success" type="button" id="minimum" data-toggle="collapse in" data-target=".max" aria-expanded="false">Minimum</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="maxmin-js" name="maxmin-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
                   <!-- The answer -->
                   <div class="max"></div>
                   <div class="min"></div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 
@@ -384,20 +428,28 @@
               <div id="collapse9" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading9">
 
                   <div class="panel-body">
-                      <input id="string-input" placeholder=" Enter a string here">
-                      <input id="times-input" placeholder=" How many times">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="string-input" placeholder=" Enter a string here">
+                              <input id="times-input" placeholder=" How many times">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="repeat" data-toggle="collapse in" data-target=".repeat-string" aria-expanded="false">Repeat</button>
-
-                  </div>
-              </div>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="repeat" data-toggle="collapse in" data-target=".repeat-string" aria-expanded="false">Repeat</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="repeat-js" name="repeat-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
               <!-- The answer -->
-              <div class="repeat-string"></div>
-
+                  <div class="repeat-string"></div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 
@@ -417,20 +469,28 @@
               <div id="collapse10" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading10">
 
                   <div class="panel-body">
-                      <p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. The first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...<br>
-                          By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. The first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...<br>
+                                  By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="fibonacci" data-toggle="collapse in" data-target=".fibonacci" aria-expanded="false">Fibonacci</button>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="fibonacci" data-toggle="collapse in" data-target=".fibonacci" aria-expanded="false">Fibonacci</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="fibonacci-js" name="fibonacci-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="fibonacci"></div>
-
+                  <!-- The answer -->
+                  <div class="fibonacci"></div>
+              </div> <!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 
@@ -450,21 +510,28 @@
               <div id="collapse11" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading11">
 
                   <div class="panel-body">
-                      <p>The prime factors of 13195 are 5, 7, 13 and 29.<br>
-                          What is the largest prime factor of the number 600851475143 ?
-                      </p>
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <p>The prime factors of 13195 are 5, 7, 13 and 29.<br>
+                                  What is the largest prime factor of the number 600851475143 ?</p>
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="largestPrime" data-toggle="collapse in" data-target=".primeFactor" aria-expanded="false">Check</button>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="largestPrime" data-toggle="collapse in" data-target=".primeFactor" aria-expanded="false">Check</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="prime-js" name="prime-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="primeFactor"></div>
-
+                  <!-- The answer -->
+                  <div class="primeFactor"></div>
+              </div><!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 
@@ -484,19 +551,27 @@
               <div id="collapse12" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading12">
 
                   <div class="panel-body">
-                      <input id="sort-input" placeholder=" Enter the numbers here">
-                  </div>
+                      <div class="row margin0">
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="sort-input" placeholder=" Enter the numbers here">
 
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="sorting" data-toggle="collapse in" data-target=".sortedArray" aria-expanded="false">Sort</button>
+                              <div class="row button-row">
+                                  <div class="col-md-4 col-sm-4 col-xs-6">
+                                      <button class="btn btn-success" type="button" id="sorting" data-toggle="collapse in" data-target=".sortedArray" aria-expanded="false">Sort</button>
+                                  </div>
+                              </div> <!-- /.row.button-row -->
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <label>
+                                  <textarea class="form-control" id="sort-js" name="sort-js" cols="50" rows="10"></textarea>
+                              </label>
+                          </div>
+                      </div> <!-- /.row.margin0 -->
+                  </div> <!-- /.panel-body -->
 
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="sortedArray"></div>
-
+                  <!-- The answer -->
+                  <div class="sortedArray"></div>
+              </div><!-- /.panel-collapse -->
           </div> <!-- /.panel-default .algorithm-card -->
 
 

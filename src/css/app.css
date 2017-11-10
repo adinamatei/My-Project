@@ -206,17 +206,8 @@ figcaption a:hover {
 
 /* ********************************************* */
 /*Algorithms page*/
-/*.myHeader {*/
-    /*-webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
-    /*-moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
-    /*box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
-    /*padding: 30px;*/
-    /*margin: 40px 0;*/
-    /*text-align: center;*/
-    /*width: 100%;*/
-/*}*/
 .row.my-header{
-    margin: 2% auto 5%;
+    margin-bottom: 5%;
 }
 .emptyDiv:after {
     content:"";
@@ -233,14 +224,20 @@ figcaption a:hover {
     padding: 30px;
     margin: 20px auto;
 }
-.algorithm-card:hover {
-    -webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);
-    cursor: pointer;
+/*.algorithm-card:hover {*/
+    /*-webkit-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
+    /*box-shadow: 10px 10px 50px 0 rgba(0,0,0,0.75);*/
+    /*!*cursor: pointer;*!*/
+/*}*/
+.button-row {
+    margin-top: 10%;
 }
 .shows-answer{
     padding: 20px;
+}
+.row.margin0 {
+    margin-bottom: 0;
 }
 .panel-title {
     font-size: 36px;
@@ -248,6 +245,9 @@ figcaption a:hover {
 }
 .panel-default>.panel-heading{
     background-color: transparent;
+}
+.panel-title a {
+    display: block;
 }
 a:focus,
 a:hover{
@@ -271,7 +271,10 @@ input:focus {
 input#string-input,
 input#times-input{
     width: 45%;
-    margin-right: 20px;
+    margin-right: 5px;
+}
+.form-control {
+    font-size: 10px;
 }
 /* ********************************************************** */
 /* OOP page*/
