@@ -1,4 +1,4 @@
-// import $ from "jquery";
+import $ from "jquery";
 
 
 $('#myButton').on('click', function () {
@@ -78,4 +78,3 @@ $('#sorting').on('click', function () {
     $('.sortedArray').text(sortArray());
     $btn.button('reset');
 });
-

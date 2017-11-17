@@ -1,510 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Javascript Algorithms</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/app.css">
-<link href="./public/css/main.css?dc3f80007e5d0b10d755" rel="stylesheet"></head>
+    <!--<link rel="stylesheet" href="./css/app.css">-->
+
+<link href="./public/css/app.css?87afdcc9840cf0f3245f" rel="stylesheet"></head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Adina Matei</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section4">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="algorithms.html">Algorithms</a></li>
+                            <li><a href="oop.html">OOP</a></li>
+                            <!--<li><a href="#">JS Validator</a></li>-->
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://github.com/adinamatei">GitHub</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#section6">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div id="section1">
+        <div class="container">
+            <div class="my-parallax">
+                <div class="home text-center">
+                    <h1>Portfolio Website</h1>
+                    <h4>Welcome</h4>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section1 -->
+
+
+    <div id="section2" class="my-color">
+        <div class="container small">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="about-container">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="about-me">
+                            <img src="./img/my-photo.jpg" class="my-photo" alt="my photo">
+                            <h1 class="text-center">Hi !</h1>
+
+                            <div class="text-description">
+                                <p>
+                                    I'm Adina, and I want to become a Frontend Developer. <br>
+                                    I like to build things with technology and I enjoy to create websites. <br>
+                                    I'm a positive and friendly person. Also, I love to set goals and achieve them. <br>
+                                    My important qualities: self-motivated, ability overcome difficulties and ability to learn.<br>
+                                    <!-- TODO - modify this sentence - I strongly believe technology can and should enrich every single life this universe has to offer.<br>-->
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>JQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <ul>
+                                        <li>Bootstrap</li>
+                                        <li>Node.js</li>
+                                        <li>Webpack</li>
+                                        <li>Git versioning</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /#section2 -->
+
 
-  <!-- the Navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Adina Matei</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JavaScript <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Algorithms</a></li>
-              <li><a href="#">OOP</a></li>
-              <li><a href="#">JS Validator</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">GitHub</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <!-- Page content -->
-  <div class="container">
-    <div class="row">
-      <h1 id="fontWeight">Algorithmic challenges</h1>
-    </div> <!-- /.row -->
-
-    <div class="emptyDiv"></div>
-
-<!-- ************************************************************************************ -->
-      <!-- Challenge Container -->
-      <div class="panel-group challengeContainer" id="accordion" role="tablist" aria-multiselectable="true">
-
-<!-- *********************************************************************************** -->
-          <!-- 1. Multiples of 3 and 5 -->
-          <div class="panel panel-default algorithm-card">
-              <div class="panel-heading" role="tab" id="headingOne">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Multiples of 3 and 5
-                      </a>
-                  </h1>
-              </div>
-              <!-- hidden panel -->
-              <div id="collapseOne" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                      <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
-                  </div>
-                  <button class="btn btn-success" type="button" id="myButton" data-toggle="collapse" data-target=".sum" aria-expanded="false">
-                      Answer
-                  </button>
-                  <div class="sum"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- *********************************************************************************** -->
-          <!-- 2. Even Number Checker -->
-          <div class="panel panel-default algorithm-card">
-              <div class="panel-heading" role="tab" id="heading2">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                          Even Number Checker
-                      </a>
-                  </h1>
-              </div>
-              <!-- hidden panel -->
-              <div id="collapse2" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading2">
-                  <div class="panel-body">
-                      <input id="arrinput" placeholder=" Please type some numbers ">
-                  </div>
-                  <button class="btn btn-success" type="button" id="check-even" data-toggle="collapse" data-target=".even-answer" aria-expanded="false">
-                      Answer
-                  </button>
-                  <div class="even-answer"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************ -->
-          <!-- 3. Reverse a string -->
-          <div class="panel panel-default algorithm-card">
-
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading3">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                          Reverse a string
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse3" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading3">
-
-                  <div class="panel-body">
-                      <input id="stringinput" placeholder=" Type a string ">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="reverse-string" data-toggle="collapse" data-target=".reverse" aria-expanded="false">Reverse</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs3-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs3-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel3">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
-                                      </button>
-                                      <h4 class="modal-title">String Example</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                      <p>hello</p>
-                                      <p>htraE morf sgniteerG</p>
-                                      <p>Howdy</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- The answer -->
-                  <div class="reverse"></div>
-
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************ -->
-          <!--4. Check for palindromes-->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading4">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                          Check for Palindromes
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse4" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading4">
-
-                  <div class="panel-body">
-                      <input id="palin-input" placeholder=" Enter the text you'd like to check ">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="check-palindrome" data-toggle="collapse" data-target=".isPalindrome" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs4-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs4-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel4">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
-                                      </button>
-                                      <h4 class="modal-title">Palindrome Examples</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                      <p>A man, a plan, a canal. Panama</p>
-                                      <p>never odd or even</p>
-                                      <p>My age is 0, 0 si ega ym</p>
-                                      <p>0_0 (: /-\ :) 0-0</p>
-                                      <p>raCeCar</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- The answer -->
-                  <div class="isPalindrome"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************* -->
-          <!-- 5. Find the Longest Word in a String -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading5">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                          Find the Longest Word in a String
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse5" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading5">
-
-                  <div class="panel-body">
-                      <input id="longest-input" placeholder=" Enter your text here">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="check-longest" data-toggle="collapse" data-target=".longest" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs5-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs5-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel5">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
-                                      </button>
-                                      <h4 class="modal-title">Phrase Examples</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                      <p>The quick brown fox jumped over the lazy dog</p>
-                                      <p>May the force be with you</p>
-                                      <p>What if we try a super-long word such as otorhinolaryngology</p>
-                                      <p>What is the average airspeed velocity of an unladen swallow</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- The answer -->
-                  <div class="longest"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************ -->
-          <!-- 6. Title Case a Sentence-->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading6">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                          Title Case a Sentence
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse6" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading6">
-
-                  <div class="panel-body">
-                      <input id="sentence-input" placeholder=" Enter your sentence here">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="title-case" data-toggle="collapse" data-target=".titleCase" aria-expanded="false">Check</button>
-
-                      <!-- Small modal -->
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bs6-example-modal-sm">Example</button>
-
-                      <div class="modal fade bs6-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel6">
-                          <div class="modal-dialog modal-sm" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">x</span>
-                                      </button>
-                                      <h4 class="modal-title">Sentence Examples</h4>
-                                  </div>
-                                  <div class="modal-body">
-                                      <p>I'm a little tea pot</p>
-                                      <p>sHoRt AnD sToUt</p>
-                                      <p>HERE IS MY HANDLE HERE IS MY SPOUT</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- The answer -->
-                  <div class="titleCase"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************ -->
-          <!-- 7. Factorialize a Number -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading7">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                          Factorialize a Number
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse7" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading7">
-
-                  <div class="panel-body">
-                      <input id="number-input" placeholder=" Enter your number here">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="factorialize" data-toggle="collapse" data-target=".factorial" aria-expanded="false">Factorialize</button>
-                  </div>
-
-                  <!-- The answer -->
-                  <div class="factorial"></div>
-              </div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-<!-- ************************************************************************************ -->
-          <!-- 8. Maximum and minimum of an array -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading8">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="true" aria-controls="collapse8">
-                          Maximum and minimum of an array
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse8" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading8">
-
-                  <div class="panel-body">
-                      <input id="array-input" placeholder=" Enter the numbers here">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="maximum" data-toggle="collapse" data-target=".max" aria-expanded="false">Maximum</button>
-                      <button class="btn btn-success" type="button" id="minimum" data-toggle="collapse" data-target=".min" aria-expanded="false">Minimum</button>
-                  </div>
-              </div>
-
-                  <!-- The answer -->
-                  <div class="max"></div>
-                  <div class="min"></div>
-          </div> <!-- /.panel-default .algorithm-card -->
-
-
-<!-- ************************************************************************************ -->
-          <!-- 9. Repeat a string -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading9">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="true" aria-controls="collapse9">
-                          Repeat a String
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse9" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading9">
-
-                  <div class="panel-body">
-                      <input id="string-input" placeholder=" Enter a string here">
-                      <input id="times-input" placeholder=" How many times">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="repeat" data-toggle="collapse" data-target=".repeat-string" aria-expanded="false">Repeat</button>
-
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="repeat-string"></div>
-
-          </div> <!-- /.panel-default .algorithm-card -->
-
-
-<!-- ************************************************************************************ -->
-          <!-- 10. Even Fibonacci numbers -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading10">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                          Sum of Even Fibonacci numbers
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse10" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading10">
-
-                  <div class="panel-body">
-                      <p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. The first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...<br>
-                          By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="fibonacci" data-toggle="collapse" data-target=".fibonacci" aria-expanded="false">Fibonacci</button>
-
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="fibonacci"></div>
-
-          </div> <!-- /.panel-default .algorithm-card -->
-
-
-<!-- ************************************************************************************ -->
-          <!-- 11. Largest prime factor -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading11">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                          Largest prime factor
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse11" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading11">
-
-                  <div class="panel-body">
-                      <p>The prime factors of 13195 are 5, 7, 13 and 29.<br>
-                          What is the largest prime factor of the number 600851475143 ?
-                      </p>
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="largestPrime" data-toggle="collapse" data-target=".primeFactor" aria-expanded="false">Check</button>
-
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="primeFactor"></div>
-
-          </div> <!-- /.panel-default .algorithm-card -->
-
-
-<!-- ************************************************************************************ -->
-          <!-- 12. Sort an array -->
-          <div class="panel panel-default algorithm-card">
-              <!-- panel heading -->
-              <div class="panel-heading" role="tab" id="heading12">
-                  <h1 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="true" aria-controls="collapse12">
-                          Sorting an Array
-                      </a>
-                  </h1>
-              </div>  <!-- panel-heading-->
-
-              <!-- hidden panel collapse-->
-              <div id="collapse12" class="panel-collapse collapse show-answer" role="tabpanel" aria-labelledby="heading12">
-
-                  <div class="panel-body">
-                      <input id="sort-input" placeholder=" Enter the numbers here">
-                  </div>
-
-                  <!--Buttons div -->
-                  <div class="button-area">
-                      <button class="btn btn-success" type="button" id="sorting" data-toggle="collapse" data-target=".sortedArray" aria-expanded="false">Sort</button>
-
-                  </div>
-              </div>
-
-              <!-- The answer -->
-              <div class="sortedArray"></div>
-
-          </div> <!-- /.panel-default .algorithm-card -->
-
-
-
-      </div> <!-- /.panel-group .challengeContainer  -->
-  </div> <!-- /.container  -->
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/challenges.js"></script>
-<script type="text/javascript" src="./public/js/bundle.js?dc3f80007e5d0b10d755"></script></body>
+    <div id="section3">
+        <div class="container">
+            <div class="my-parallax2">
+                <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <h3>“You just can’t beat the person who never gives up.”</h3>
+                                <p> -- Babe Ruth --</p>
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="carousel-caption">
+                                <h3>“There will be obstacles. There will be doubters. There will be mistakes. But with hard work, there are no limits.“</h3>
+                                <p>-- Michael Phelps --</p>
+                            </div>
+                        </div>
+                        <div class="item">
+
+                            <div class="carousel-caption">
+                                <h3>“Change your life today. Don’t gamble on the future, act now, without delay.“ </h3>
+                                <p>-- Simone de Beauvoir --</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+
+
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section3 -->
+
+
+    <div id="section4" class="my-color">
+        <div class="container small  text-center" id="portfolio-container">
+            <h4>Portfolio</h4>
+            <div class="overlay"></div>
+            <div class="row portfolio-area">
+                <div class="portfolio">
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/project1.jpg" class="port-img">
+                            <figcaption>
+                                <a href="http://adinamatei.github.io/marketingAgency/">
+                                    <h3>Marketing Agency Layout</h3>
+                                    <hr>
+                                    <p>HTML / CSS</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/project2.jpg" class="port-img">
+                            <figcaption>
+                                <a href="https://adinamatei.github.io/Adventure/">
+                                    <h3>Adventure & Travel Blog</h3>
+                                    <hr>
+                                    <p>HTML / CSS</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/lol.jpg" class="port-img">
+                            <figcaption>
+                                <a href="https://adinamatei.github.io/MinistryOfLeague">
+                                    <h3>LOL Community Layout</h3>
+                                    <hr>
+                                    <p>Bootstrap</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/payment.jpg" class="port-img">
+                            <figcaption>
+                                <a href="https://adinamatei.github.io/PaymentCart/">
+                                    <h3>Payment Cart</h3>
+                                    <hr>
+                                    <p>CSS Grid System</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/color-game.jpg" class="port-img">
+                            <figcaption>
+                                <a href="https://adinamatei.github.io/ColorGame/">
+                                    <h3>Color Guessing Game</h3>
+                                    <hr>
+                                    <p>JavaScript</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-sm-6 wrapper">
+                        <figure>
+                            <img src="./img/todo.jpg" class="port-img">
+                            <figcaption>
+                                <a href="https://adinamatei.github.io/TodoList/">
+                                    <h3>A TODO list</h3>
+                                    <hr>
+                                    <p>jQuery</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> <!-- /.portfolio -->
+            </div>
+            <div class="row button-area">
+                <div class="portfolio-button">
+                    <button type="button" class="btn btn-default btn-lg git-button">
+                        <a href="https://github.com/adinamatei">Visit my GitHub repositories</a>
+                    </button>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section4 -->
+
+
+    <div id="section5">
+        <div class="container">
+            <div class="my-parallax3">
+
+            </div>
+        </div> <!-- /.container -->
+    </div><!-- /#section5 -->
+
+
+    <div id="section6" class="my-color">
+        <div class="container small">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="col-sm-12">
+                    <div class="contact text-center">
+                        <h1>Contact</h1>
+                        <div class="contact-area">
+                            <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Matei Adina</h2>
+                            <h2><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>0753 200 802</h2>
+                            <h2><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>adinamateim@gmail.com</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /#section6 -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--<script src="js/index.js"></script>-->
+<!--<script src="js/script.js"></script>-->
+<!--<script src="js/oop.js"></script>-->
+<script type="text/javascript" src="./public/js/app.bundle.js?87afdcc9840cf0f3245f"></script><script type="text/javascript" src="./public/js/index.bundle.js?87afdcc9840cf0f3245f"></script><script type="text/javascript" src="./public/js/challenges.bundle.js?87afdcc9840cf0f3245f"></script></body>
 </html>

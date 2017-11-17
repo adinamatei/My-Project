@@ -1,7 +1,7 @@
 {
-  "name": "projectNo2",
+  "name": "project",
   "version": "1.0.0",
-  "description": "ProjectNo2",
+  "description": "My-Project",
   "main": "app.js",
   "scripts": {
     "start": "npm run dev",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adinamatei/................git"
+    "url": "git+https://github.com/adinamatei/My-Project.git"
   },
   "author": "Adina Matei",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adinamatei/................/issues"
+    "url": "https://github.com/adinamatei/My-Project/issues"
   },
-  "homepage": "https://github.com/adinamatei/.............#readme",
+  "homepage": "https://github.com/adinamatei/My-Project#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",

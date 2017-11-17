@@ -1,5 +1,7 @@
 import $ from "jquery";
-import script from "./js/script"
+// import "./js/script.js";
+// import "./algorithms.html";
+// import  "./oop.html"
 
 import './css/app.css';
 import 'font-awesome/scss/font-awesome.scss';

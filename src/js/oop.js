@@ -160,4 +160,3 @@ console.log(person1.getInfo());
 const person2 = new Child("Maria", 12);
 console.log(person2.getInfo());
 
-

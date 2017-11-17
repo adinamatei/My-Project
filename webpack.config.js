@@ -15,15 +15,17 @@ const cssConfig = isProd ? cssProd : cssDev;
 
 
 module.exports = {
-  entry: [
-      "font-awesome/scss/font-awesome.scss",
-      "./src/app.js"
-  ],
+  entry: {
+      app: "./src/app.js",
+      index: './src/js/index.js',
+      challenges: './src/js/challenges.js'
+
+  },
   // devtool: 'source-map',
   output: {
       path: path.resolve(__dirname, 'public'),
       publicPath: './public/',
-      filename: "js/bundle.js"
+      filename: "js/[name].bundle.js"
   },
   devServer: {
       contentBase: path.join(__dirname, '/'),
@@ -49,6 +51,18 @@ module.exports = {
           'image-webpack-loader'
         ]
       },
+      // {
+      //       test: /\.html$/,
+      //       use: [
+      //           {
+      //               loader: 'file-loader',
+      //               options: {
+      //                   name: '[name].[ext]'
+      //               }
+      //           }
+      //       ],
+      //       exclude: path.resolve(__dirname, 'src/index.html'),
+      //   },
 
       {
         test: [/\.css$/, /\.scss$/],
@@ -67,11 +81,23 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Home Page',
+      title: 'Portfolio Website',
       hash: true,
       filename: '../index.html',
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+          title: 'Algorithms',
+          hash: true,
+          filename: '../algorithms.html',
+          template: './src/algorithms.html',
+        }),
+    new HtmlWebpackPlugin({
+          title: 'OOP',
+          hash: true,
+          filename: '../oop.html',
+          template: './src/oop.html',
+        }),
 
     new ExtractTextPlugin({
       filename: "css/[name].css",
