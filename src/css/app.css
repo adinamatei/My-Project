@@ -11,6 +11,45 @@ body {
     margin: 0;
     background-color: #262626;
 }
+@media only screen and (max-width: 1300px) and (min-width: 900px){
+    body, .text-description p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 899px) and (min-width: 600px){
+    body, .text-description p  {
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 599px) and (min-width: 400px){
+    body, .text-description p  {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 399px){
+    body, .text-description p  {
+        font-size: 10px;
+    }
+    h2, h3 {
+        font-size: 14px;
+    }
+
+}
 .navbar-header {
     padding-left: 15px;
 }
@@ -86,7 +125,7 @@ body {
     background-position: 0 0, 0 0,40px 70px,40px 70px,0 0,40px 70px;
     background-size: 80px 140px;
 }
-.about-me h1 {
+.about-me h2 {
     display: inline;
 }
 .about-me,
@@ -102,15 +141,15 @@ img.my-photo {
     border-radius: 50px;
     float: right;
 }
-.text-description {
+.text-description p{
     display: inline-block;
-    font-size: 1.6em;
+    font-size: 16px;
 }
 .skills {
-    font-size: 1.8em;
+    font-size: 18px;
     line-height: 2;
 }
-.skills h3 {
+.skills h2 {
     margin-bottom: 40px;
     text-align: center;
 }
@@ -179,9 +218,14 @@ figcaption a:hover {
 .portfolio-button button{
     background-color: #3b3b3b;
     border: none;
+    width: 60%;
+    font-size: 1.4em;
 }
-.portfolio-button button:hover {
-    background-color: #4378ac;    
+.portfolio-button button:hover,
+.portfolio-button button:active,
+.portfolio-button button:active:hover,
+.portfolio-button button:focus {
+    background-color: #4378ac;
 }
 .portfolio-button a {
     color: #afafaf;
