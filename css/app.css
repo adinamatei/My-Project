@@ -29,6 +29,13 @@ body {
     h3 {
         font-size: 22px;
     }
+    div.container.my-container{
+        width: 80%;
+    }
+    p.text-description,
+    div.skills {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 599px) and (min-width: 400px){
     body {
@@ -40,6 +47,15 @@ body {
     h3 {
         font-size: 18px;
     }
+    div.container.my-container{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p.text-description,
+    div.skills {
+        font-size: 13px;
+    }
 }
 @media only screen and (max-width: 399px){
     body {
@@ -48,7 +64,15 @@ body {
     h2, h3 {
         font-size: 14px;
     }
-
+    div.container.my-container{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p.text-description,
+    div.skills {
+        font-size: 11px;
+    }
 }
 .navbar-header {
     padding-left: 15px;
@@ -141,7 +165,7 @@ img.my-photo {
     border-radius: 50px;
     float: right;
 }
-.text-description p{
+.text-description{
     display: inline-block;
     font-size: 16px;
 }
