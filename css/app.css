@@ -308,6 +308,9 @@ input#times-input{
     width: 45%;
     margin-right: 5px;
 }
+.btn-success {
+    margin-bottom: 10px;
+}
 .form-control {
     font-size: 10px;
 }
