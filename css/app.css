@@ -12,7 +12,7 @@ body {
     background-color: #262626;
 }
 @media only screen and (max-width: 1300px) and (min-width: 900px){
-    body, .text-description p {
+    body {
         font-size: 14px;
     }
     h2 {
@@ -20,7 +20,7 @@ body {
     }
 }
 @media only screen and (max-width: 899px) and (min-width: 600px){
-    body, .text-description p  {
+    body {
         font-size: 11px;
     }
     h2 {
@@ -31,7 +31,7 @@ body {
     }
 }
 @media only screen and (max-width: 599px) and (min-width: 400px){
-    body, .text-description p  {
+    body {
         font-size: 10px;
     }
     h2 {
@@ -42,7 +42,7 @@ body {
     }
 }
 @media only screen and (max-width: 399px){
-    body, .text-description p  {
+    body {
         font-size: 10px;
     }
     h2, h3 {
@@ -218,7 +218,7 @@ figcaption a:hover {
 .portfolio-button button{
     background-color: #3b3b3b;
     border: none;
-    width: 60%;
+    width: 80%;
     font-size: 1.4em;
 }
 .portfolio-button button:hover,

@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 
 $('#myButton').on('click', function () {
     const $btn = $(this).button('loading');
