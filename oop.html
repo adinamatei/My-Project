@@ -65,7 +65,7 @@
                         <ul>
                             Building applications whit objects allows us to adopt some valuable techniques:
                             <li><b>Inheritance</b> -- objects can inherit characteristics from other objects</li>
-                            <li><b>Encapsulation</b> -- refers to enclosing (encapsulate) all the functionalities of an object inside that object so that methods and properties are hidden for the rest of application</li>
+                            <li><b>Encapsulation</b> -- refers to enclosing (encapsulate) all the functionalities of an object inside that object so that all methods and properties are hidden for the rest of application</li>
                             <li><b>Polymorphism</b> -- the ability of different objects to share the same functionality, while their implementation can be different</li>
                             <li><b>Abstraction</b> -- creating a simple model of a more complex thing, which represents its most important aspects in a way that is easy to work with for our program's purposes</li>
                         </ul>
@@ -103,14 +103,14 @@
                 </div>
                 <div class="panel-body">
                     <div class="example-description">
-                        <p>Initializing the instance properties, these will be defined on each <code>Student</code> instance that is created.<br>
-                            Overwriting the prototype property whit an object literal, and defined all methods (that will be inherited by the <code>Student</code> instanced) in this object.<br>
-                            By overwriting the prototype with a new object literal we have all the methods organized in one place, and you can better see the encapsulation that we are after.</p>
+                        <p>In this example below I have created a <code>Student</code> object with some public fields.<br>
+                            To have the same properties and methods for all the student objects, I use a constructor Function to encapsulate this properties and methods.<br>
+                            By overwriting the prototype property with a new object literal and defined all methods (that will be inherited by the <code>Student</code> instances) in this object (in one place), it's highlighted encapsulation.</p>
                     </div>
                     <div class="js-link">
                         <iframe
                                 width="90%" height="400"
-                                src="//jsfiddle.net/c6pkwn21/5/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
+                                src="//jsfiddle.net/c6pkwn21/6/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" frameborder="0">
                         </iframe>
                     </div>
                 </div> <!-- /.panel-body -->
