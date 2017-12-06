@@ -123,6 +123,28 @@ var allAnimals = function (animal) {
 console.log(allAnimals(animal));
 
 
+//Abstraction
+// created an abstract class or function in JavaScript
+var Color = function () {
+    this.colorName = "none";
+    // created an error, if someone tries to create an instance of the abstract class
+    throw new Error("Cannot create an instance of an abstract class")
+};
+Color.prototype.favorite = function () {
+    return "My favorite color is: " + this.colorName;
+};
+//created a new object Green
+var Green = function (colorName) {
+    this.colorName = colorName;
+};
+// and making the Color to be the parent of Green object
+Green.prototype = Object.create(Color.prototype);
+
+var green = new Green('Green');
+// Green inherits the favorite() method from his parent
+console.log(green.favorite());
+
+
 
 //Classes and Inheritance in ES6
 class Person {
