@@ -2,4 +2,4 @@
 
 This project is designed and developed by myself using Bootstrap.
 
-This is a work in progress...
+[https://adinamatei.github.io/](https://adinamatei.github.io/)
