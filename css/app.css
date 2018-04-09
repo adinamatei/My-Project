@@ -374,3 +374,8 @@ h4 {
 .example-description{
     line-height: 2;
 }
+
+#gitLink {
+    margin-left: 20px;
+    color: #fff;
+}
